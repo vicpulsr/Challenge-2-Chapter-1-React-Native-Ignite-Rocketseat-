@@ -6,10 +6,9 @@ import logoImg from '../assets/images/logo/logo.png';
 
 interface HeaderProps {
   tasksCounter: number;
-}
+};
 
 export function Header({ tasksCounter }: HeaderProps) {
-  //TODO render 'tarefa' if tasksCounter equals 1, otherwise render 'tarefas'
   const tasksCounterText = tasksCounter === 1 ? 'tarefa' : 'tarefas';
   
   return (
@@ -22,7 +21,7 @@ export function Header({ tasksCounter }: HeaderProps) {
       </View>
     </View>
   )
-}
+};
 
 const styles = StyleSheet.create({
   container: {

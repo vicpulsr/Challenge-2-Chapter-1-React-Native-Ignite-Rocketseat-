@@ -5,7 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 interface ItemWrapperProps {
   index: number;
   children: ReactNode;
-}
+};
 
 export function ItemWrapper({ index, children }: ItemWrapperProps) {
   if (index % 2 === 0)
@@ -18,7 +18,7 @@ export function ItemWrapper({ index, children }: ItemWrapperProps) {
       >
         {children}
       </LinearGradient>
-    )
+    );
   
   return (
     <View
@@ -27,4 +27,4 @@ export function ItemWrapper({ index, children }: ItemWrapperProps) {
       {children}
     </View>
   )
-}
+};
